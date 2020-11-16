@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+html {
+  height: 2000px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(10, 8, 11, 0);
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 3em;
+}
+
+.featured {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(10, 8, 11, 0.6) 60%,
+      rgba(102, 81, 76, 0.6)
+    ),
+    url('media/images/code-1.jpg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  color: rgb(238, 238, 238);
+  background-color: rgba(10, 8, 11, 0.7);
+  text-align: center;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.img-container {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.img-container img {
+  max-width: 15em;
+  max-width: 15em;
+  border-radius: 50%;
+}
+
+.statement h1 {
+  font-size: 4em;
+  margin-bottom: 0.3em;
+}
+
+.statement p {
+  font-size: 3em;
+  margin-top: 0px;
+}
