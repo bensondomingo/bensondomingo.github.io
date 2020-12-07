@@ -3,6 +3,7 @@
 html {
   height: 2000px;
   height: -webkit-fill-available;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,10 @@ button {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.spacer {
+  height: calc(100vh / 4);
 }
 
 #scroll-down__btn {
@@ -66,7 +71,6 @@ button {
 #scroll-down__btn:hover {
   cursor: pointer;
   background-color: rgba(102, 81, 76, 0.9);
-  
 }
 
 .nav-links {
@@ -148,15 +152,47 @@ ul {
   font-size: calc(1.5em * var(--size-scaler));
 }
 
+#skills {
+  background-color: #2f4858;
+  text-align: center;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills h2 {
+  text-transform: uppercase;
+  margin-bottom: calc(2em * var(--size-scaler));
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#web-dev {
+  margin: 3em 0;
+}
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 20em;
+}
+
 /* Media Queries */
 
 @media (max-width: 320px) {
   :root {
-    --size-scaler: 0.8;
+    --size-scaler: 0.75;
   }
 
   .img-container img {
-    max-width: calc(18em * var(--size-scaler));
+    max-width: calc(17em * var(--size-scaler));
   }
 }
 
@@ -183,6 +219,10 @@ ul {
 
   .statement > p > span {
     font-size: calc(1em * var(--size-scaler));
+  }
+
+  .skills-container {
+    flex-direction: row;
   }
 }
 
