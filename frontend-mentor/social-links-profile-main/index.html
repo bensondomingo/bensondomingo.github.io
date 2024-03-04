@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200...700&display=swap"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Outfit", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        background-color: hsl(0, 0%, 8%);
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        padding: 30px;
+        background-color: hsl(0, 0%, 14%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 70px;
+      }
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      p#address {
+        font-weight: 400;
+        font-size: 12px;
+        color: hsl(75, 94%, 57%);
+      }
+
+      p#bio {
+        font-weight: 200;
+        font-size: 12px;
+        margin: 18px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        background-color: hsl(0, 0%, 20%);
+        margin: 12px 0;
+        height: 40px;
+        color: hsl(0, 0%, 100%);
+        border: none;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 20%);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="" srcset="" />
+      <h3>Jessica Randall</h3>
+      <p id="address">London, United Kingdom</p>
+
+      <p id="bio">"Front-end developer and avid reader."</p>
+
+      <button>GitHub</button>
+      <button>Frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </body>
+</html>
