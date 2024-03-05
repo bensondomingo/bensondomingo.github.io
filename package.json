@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx tailwindcss -i ./index.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bensondomingo/bensondomingo.github.io/issues"
   },
-  "homepage": "https://github.com/bensondomingo/bensondomingo.github.io#readme"
+  "homepage": "https://github.com/bensondomingo/bensondomingo.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
 }
