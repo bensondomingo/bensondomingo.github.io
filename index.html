@@ -10,15 +10,15 @@
     <title>Benson Domingo</title>
   </head>
   <body class="h-full font-poppins">
-    <div class="container mx-auto">
+    <div class="container mx-auto lg:px-36 xl:px-48">
       <div id="landing" class="h-svh flex flex-col">
         <nav id="nav" class="flex justify-between items-center px-12 py-8">
-          <div id="logo" class="text-2xl font-semibold">Benson</div>
+          <div id="logo" class="text-2xl md:text-[2rem]">Benson</div>
           <div id="menu" class="relative">
             <!-- hamburger button -->
             <div
               id="hamburger-btn"
-              class="flex flex-col justify-between h-6 w-8 hover:cursor-pointer"
+              class="flex flex-col justify-between h-6 w-8 hover:cursor-pointer md:hidden"
             >
               <span class="bg-black h-[2px] w-full"></span>
               <span class="bg-black h-[2px] w-full"></span>
@@ -36,12 +36,28 @@
             <!-- nav links -->
             <ul
               id="nav-links"
-              class="hidden text-xl absolute top-10 right-0 w-fit overflow-hidden flex-col justify-center items-center gap-y-4"
+              class="hidden text-xl text-gray-500 absolute top-10 right-0 w-fit overflow-hidden flex-col justify-center items-center gap-y-4 md:text-[1.5rem] md:static md:top-0 md:flex md:flex-row md:gap-x-7"
             >
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li
+                class="hover:text-gray-400 hover:underline underline-offset-[5px]"
+              >
+                <a href="#about">About</a>
+              </li>
+              <li
+                class="hover:text-gray-400 hover:underline underline-offset-[5px]"
+              >
+                <a href="#experience">Experience</a>
+              </li>
+              <li
+                class="hover:text-gray-400 hover:underline underline-offset-[5px]"
+              >
+                <a href="#projects">Projects</a>
+              </li>
+              <li
+                class="hover:text-gray-400 hover:underline underline-offset-[5px]"
+              >
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </nav>
