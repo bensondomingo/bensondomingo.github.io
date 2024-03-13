@@ -10,14 +10,14 @@
     <title>Benson Domingo</title>
   </head>
   <body class="h-full font-poppins">
-    <div class="container mx-auto lg:px-36 xl:px-48">
+    <div class="container mx-auto lg:px-36">
       <!-- Landing section -->
       <section id="landing" class="h-svh flex flex-col">
         <nav
           id="nav"
           class="flex justify-between items-center px-12 py-8 grow-0"
         >
-          <div id="logo" class="text-2xl text-gray-700 md:text-[2rem]">
+          <div id="logo" class="text-2xl text-gray-700 md:text-[2rem] select-none hover:cursor-pointer">
             Benson
           </div>
           <div id="menu" class="relative">
@@ -68,37 +68,48 @@
           </div>
         </nav>
 
-        <div class="flex flex-col justify-center items-center flex-grow">
-          <img src="media/images/me.jpg" class="w-48 rounded-full" />
-          <div class="flex flex-col justify-center items-center mt-8">
-            <p class="text-gray-500 text-[700] font-semibold block">
-              Hello, I'm
-            </p>
-            <h3 class="text-[2rem] font-bold block">Benson Domingo</h3>
-            <p class="text-gray-500 text-xl font-semibold block">
-              Software Developer
-            </p>
-          </div>
-          <!-- button container -->
-          <div
-            class="flex justify-center items-center gap-4 mt-6 font-semibold text-sm"
-          >
-            <button
-              class="block h-12 w-32 border-2 border-solid border-neutral-900 rounded-full"
+        <div
+          class="flex flex-col justify-center items-center flex-grow lg:flex-row lg:gap-16"
+        >
+          <img
+            src="media/images/me.jpg"
+            class="rounded-full w-48 sm:w-64 md:w-80 lg:w-96"
+          />
+          <div class="mt-8 lg:mt-0">
+            <div class="flex flex-col justify-center items-center text-center">
+              <p class="text-gray-500 font-semibold lg:text-[1.2rem]">
+                Hello, I'm
+              </p>
+              <h3 class="text-[2rem] font-bold sm:text-[2.5rem] lg:text-[3rem] lg:my-1">
+                Benson Domingo
+              </h3>
+              <p
+                class="text-gray-500 text-xl font-semibold sm:text-[1.5rem] lg:text-[2rem]"
+              >
+                Software Developer
+              </p>
+            </div>
+            <!-- button container -->
+            <div
+              class="flex justify-center items-center gap-4 mt-6 font-semibold text-sm"
             >
-              Download CV
-            </button>
-            <button
-              class="block h-12 w-32 text-neutral-200 bg-neutral-800 rounded-full"
-            >
-              Contact Info
-            </button>
-          </div>
+              <button
+                class="block h-12 w-32 border-2 border-solid border-neutral-900 rounded-full"
+              >
+                Download CV
+              </button>
+              <button
+                class="block h-12 w-32 text-neutral-200 bg-neutral-800 rounded-full"
+              >
+                Contact Info
+              </button>
+            </div>
 
-          <!-- social links container -->
-          <div class="flex gap-4 mt-6">
-            <img class="h-10 w-10" src="media/images/linkedin.png" />
-            <img class="h-10 w-10" src="media/images/github.png" />
+            <!-- social links container -->
+            <div class="flex justify-center items-center gap-4 mt-6">
+              <img class="h-10 w-10" src="media/images/linkedin.png" />
+              <img class="h-10 w-10" src="media/images/github.png" />
+            </div>
           </div>
         </div>
       </section>
