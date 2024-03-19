@@ -11,3 +11,6 @@ const toggleMobileNav = () => {
 
 mobileNavBtn.addEventListener("click", toggleMobileNav);
 mobileNavCloseBtn.addEventListener("click", toggleMobileNav);
+navLinks
+  .querySelectorAll("a")
+  .forEach((a) => a.addEventListener("click", toggleMobileNav));
